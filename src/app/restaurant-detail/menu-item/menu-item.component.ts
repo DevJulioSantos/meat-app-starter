@@ -13,7 +13,10 @@ export class MenuItemComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.add.emit(this.menuItem)
+    //this.add.emit(this.menuItem)
   }
 
+  emitAddEvent(){
+    this.add.emit(this.menuItem)
+  }
 }
